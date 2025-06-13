@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+:root{
+    --main_color: rgba(66, 19, 42, 0.846);
+    --secondary_color: rgba(230, 227, 74, 0.846);
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    background-color: var(--main_color);
+}
+
+header h1{
+    font-size: 2.5rem;
+    color: aliceblue;
+}
+
+header h1 span{
+    color: var(--secondary_color);
+    background-color: var(--secondary_color);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--main_color);
+}
+
+header nav a{
+    padding: 20px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.3s;
+}
+
+header nav a:hover{
+    color: var(--secondary_color);
+    text-decoration: underline;
+}
+
+.present{
+    color: var(--secondary_color);
+    text-decoration: underline;
+}
+
+header input[type='search']{
+    padding: 7px;
+    outline: none;
+    border-radius: 7px;
+    border: none;
+}
+
+header input[type='submit']{
+    padding: 7px 12px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: var(--secondary_color);
+    color: var(--main_color);
+}
+
+section{
+    height: 55vh;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main_color);
+    padding: 20px 50px;
+    text-align: center;
+    color: aliceblue;
+}
+footer h2{
+    padding: 20px;
+    text-decoration: underline;
+}
+
+.sc-home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sc-home div{
+    width: 50%;
+    padding: 50px;
+}
+
+.sc-contact{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.sc-contact div{
+    margin: 20px 10px;
+    width: 280px;
+    margin: 40px auto;
+}
+
+.sc-contact form{
+    width: 25%;
+    background: var(--main_color);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.sc-contact div input, textarea{
+    padding: 7px;
+    outline: none;
+    border: 1px solid var(--secondary_color);
+    width: 250px;
+    height: 40px;
+    margin: 10px 10px;
+    border-radius: 5px;
+}
+
+.sc-contact div button{
+    height: 50px;
+    outline: none;
+    border: 1px solid black;
+    background-color: var(--secondary_color);
+    border-radius: 5px;
+}
